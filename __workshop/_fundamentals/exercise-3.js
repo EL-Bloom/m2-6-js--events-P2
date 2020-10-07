@@ -17,10 +17,15 @@ const people = [
 // 1. Write a function that, when passed an array of *people* (person objects) as
 // an argument and returns an array of their full names (each full name is a string).
 
-function fullName(peopleArr) {
-  // return something
-}
 
+  function fullName(peopleArr) {
+    // return something
+    return peopleArr.map((person) => {
+      const { first, middle, last } = person.name;
+      return `${first} ${middle ? `${middle} ` : ""}${last}`;
+    });
+  }
+console.log(fullName(people));
 // 2. Do a console.log to verify your function.
 
 // 3. Run the test to validate: yarn test exercise-3

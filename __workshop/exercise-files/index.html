@@ -3,12 +3,57 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" /> 
+    <link
+      href="https://fonts.googleapis.com/css?family=Jost:400,700&display=swap"
+      rel="stylesheet"
+/>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
     <title>Signup Form</title>
   </head>
   <body>
+    <div class="wrapper"> 
+      <h1>Signup Form</h1> 
+      <form id="signup-form">
+      <div class= "row">  <label for= "Full-Name">Full Name</label> 
+        <input required type="text" id="textInput" />
+      </div>  
+
+      <div class= "row">   <label for = "streetAddress">Street Address</label> 
+        <input required type="text" id="streetAdress" />
+      </div>  
+
+      <div class= "row">   <label for = "email">Email Address</label> 
+        <input required type="email" id ="emailInput" />
+      </div>  
+
+      <div class= "row">   <label>Phone Number</label> 
+        <input required type="tel"  maxlength="10" id="phoneNumber" />
+      </div>  
+
+      <div class= "row">  <label>Password</label> 
+        <input required type="password" id="password" />
+      </div>  
+
+      <div class= "row">   <label>Confirm Password</label> 
+        <input required type="password"  id="confirmPassword"  />
+      </div> 
+
+      <div class="terms-wrapper">
+        <input required type="checkbox" id="terms" value="agree" />
+        <label> I agree to the <a href="/">terms of service</a>. </label>
+      </div>
+        <div id= "errorMessage" class="errorMessage"></div>
+        <div>
+        <footer> 
+          <button class="clear" >Clear</button> 
+          <button class="submit"  type="submit">Submit</button>
+        </footer> 
+      </div>  
+   
+      </form>
+    </div>
+  
     <script src="script.js"></script>
   </body>
 </html>

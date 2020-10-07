@@ -1,5 +1,13 @@
 // We often deal with "arrays of objects";
-// below is an example of an array of objects, where each object represents a person:
+// below is an example of an array of objects, where each object represents a person: 
+//-------------------------------------------------
+
+// Exercise 2
+// ------------
+//
+// 1. Write a function accepts an array and returns
+// the average age of the `people` in that array (rounded to the nearest unit.)
+// Use Math.round()
 
 const people = [
   { name: { first: "Alyssa", middle: "P.", last: "Hacker" }, age: 26 },
@@ -10,19 +18,14 @@ const people = [
   { name: { first: "Shahan", middle: "Haig", last: "Krakirian" }, age: 21 },
 ];
 
-//-------------------------------------------------
 
-// Exercise 2
-// ------------
-//
-// 1. Write a function accepts an array and returns
-// the average age of the `people` in that array (rounded to the nearest unit.)
-// Use Math.round()
+function avgAge(peopleArr) { 
+  let sumAges = 0;
+ peopleArr.forEach((person) => (sumAges += person.age)); 
+ return Math.round(sumAges / peopleArr.length);
+ }
 
-function avgAge(peopleArr) {
-  // return something
-}
-
+console.log(avgAge(people));
 // 2. Do a console.log to verify your function.
 
 // 3. Run the test to validate: yarn test exercise-2

@@ -1,1 +1,96 @@
-/* add css here */
+*{ 
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-size: 100%;
+font-family: "Jost";
+}
+
+body {
+background: #f2f2f2;
+}
+
+.wrapper {
+margin: 32px auto;
+max-width: 475px;
+padding: 24px;
+background-color: white;
+box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  0 100px 80px rgba(0, 0, 0, 0.07);
+border-radius: 16px;
+}
+
+h1 {
+font-size: 48px;
+text-align: center;
+margin-top: 12px;
+margin-bottom: 48px;
+}
+
+.row {
+display: flex;
+margin-bottom: 8px;
+width: 100%;
+}
+
+.row label {
+font-weight: 700;
+width: 40%;
+text-align: right;
+padding: 8px;
+padding-right: 16px;
+}
+
+.row input{
+width:40%;
+border-radius: 5px;
+border: 1px solid #bbb;
+}
+
+.terms-wrapper {
+background: #eee;
+border-radius: 8px;
+padding: 16px;
+text-align: center;
+margin-top: 48px;
+}
+
+form footer {
+display: flex;
+justify-content: space-between;
+margin-top: 48px;
+}
+
+button {
+padding: 12px 48px;
+border-radius: 6px;
+font-size: 16px;
+font-weight: bold;
+
+
+}
+
+button.clear {
+background: hsl(333deg, 100%, 44%);
+}
+
+button.submit {
+background: hsl(256deg, 100%, 44%);
+}
+
+.errorMessage {
+background: hsla(333deg, 100%, 44%, 0.25);
+padding: 16px;
+border-radius: 4px;
+font-weight: bold;
+display: none;
+margin-top: 32px;
+text-align: center;
+}
+
+input.errorField {
+border-color: hsl(333deg, 100%, 44%);
+border-width: 3px;
+}
